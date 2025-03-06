@@ -3,38 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cập Nhật Thông Tin</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Cập nhật</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     <div class="container">
         <nav>
-            <a href="index.html">Home</a> | 
-            <a href="login.html">Đăng nhập</a> | 
-            <a href="register.html">Đăng ký</a>
+            <a href="#">Home</a> | <a href="logout.html">Đăng xuất</a>
         </nav>
-
-        <div class="form-container">
+        <div class="box">
             <h2>Màn hình cập nhật</h2>
-            <form action="#">
-                <label>Username</label>
-                <input type="text" value="xxx" required>
+            <form id="updateForm">
+                <label for="username">Username</label>
+                <input type="text" id="username" value="xxx" required>
+                
+                <label for="password">Mật khẩu</label>
+                <input type="password" id="password" value="xxx" required>
 
-                <label>Mật khẩu</label>
-                <input type="password" value="xxx" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" value="xxx@gmail.com" required>
 
-                <label>Nhập lại mật khẩu</label>
-                <input type="password" value="xxx" required>
-
-                <label>Email</label>
-                <input type="email" value="xxx" required>
-
-                <a href="login.html" class="link">Đã có tài khoản</a>
                 <button type="submit">Cập nhật</button>
             </form>
         </div>
-
-        <footer>Lập trình web @01/2024</footer>
+        <footer>Lập trình web @2024</footer>
     </div>
+    <script src="js/script.js"></script>
 </body>
 </html>
